@@ -1,6 +1,6 @@
 import ShopCollectionProduct from "./ShopCollectionProduct";
 import img from "../assets/images/imgCollection.webp";
-import banner from "../assets/images/offerBanner.webp"
+import banner from "../assets/images/offerbanner.webp"
 import CompHeader from "./CompHeader";
 function ShopByCollection() {
     return (
