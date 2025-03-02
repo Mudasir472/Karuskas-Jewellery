@@ -1,0 +1,12 @@
+:root {
+    --color-primary: #832729;
+    /* Blue */
+    --color-secondary: #10B981;
+    /* Green */
+    --color-tertiary: #F59E0B;
+    /* Yellow */
+}
+
+*{
+    /* color: var(--color-primary); */
+}
