@@ -8,7 +8,6 @@ function Home() {
     return (
         <div >
             <Carousel />
-            {/* <ProductList /> */}
             <ShopCategory />
             <ShopByCollection />
             <NewForYou />

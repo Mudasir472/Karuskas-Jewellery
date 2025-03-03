@@ -2,10 +2,7 @@ import { useSelector } from "react-redux";
 import card1 from "../../assets/images/card1.webp";
 import ProductCard from "./ProductCard";
 import { Link } from "react-router-dom";
-function ProductList() {
-    const { items, status, error } = useSelector((state) => state.products);
-    console.log(items);
-
+function ProductList({ items }) {
     return (
 
         <div className="container mx-auto px-4 py-6">

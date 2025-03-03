@@ -11,6 +11,7 @@ import { Toaster } from "react-hot-toast";
 import { useDispatch } from "react-redux";
 import { productsFetch } from "./store/product/productSlice";
 import CategoryPage from "./pages/Category";
+import ScrollToTop from "./ScrollToTop";
 function App() {
   const dispatch = useDispatch();
 
@@ -21,6 +22,7 @@ function App() {
   return (
     <>
       <Router>
+        <ScrollToTop />
         <Toaster reverseOrder={false} />
         <Navbar />
         <div className="main-content">

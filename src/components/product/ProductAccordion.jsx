@@ -1,16 +1,16 @@
 import { useState } from "react";
 
-export default function ProductAccordion({ openSections, toggleSection }) {
+export default function ProductAccordion({ product,openSections, toggleSection }) {
     const sections = [
         {
             key: "Metal", icon: "🪙", title: "METAL DETAILS", content: (
                 <div className="grid grid-cols-2 gap-[1rem] text-gray-700 mt-3">
                     <p><strong>18K</strong><br />Karatage</p>
                     <p><strong>Rose</strong><br />Material Colour</p>
-                    <p><strong>Gold</strong><br />Metal</p>
+                    <p><strong>{product?.material}</strong><br />Metal</p>
                     <p><strong>2.4 cm</strong><br />Earring Height</p>
                     <p><strong>1.5 cm</strong><br />Earring Width</p>
-                    <p><strong>2.055g</strong><br />Gross Weight</p>
+                    <p><strong>{product?.weight}</strong><br />Gross Weight</p>
                 </div>
             )
         },
