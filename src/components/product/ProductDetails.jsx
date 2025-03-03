@@ -27,7 +27,7 @@ export default function ProductDetails() {
         <div className="container mx-auto p-4">
             <div className="text-center">
                 <h3 className="text-2xl font-semibold text-gray-800">{product?.name}</h3>
-                <p className="text-lg text-[#660000] font-semibold mt-1">₹{product?.discountPrice}<span className="bg-[linear-gradient(90.18deg,#832729_0.17%,#631517_99.86%)] cursor-pointer ms-4  p-[7px] font-medium rounded-lg text-white">Add to Cart</span></p>
+                <p className="text-lg text-[#660000] font-semibold mt-1">₹{product?.discountPrice || product?.price}<span className="bg-[linear-gradient(90.18deg,#832729_0.17%,#631517_99.86%)] cursor-pointer ms-4  p-[7px] font-medium rounded-lg text-white">Add to Cart</span></p>
             </div>
 
             <div className="flex justify-center gap-3 mt-4 flex-wrap">

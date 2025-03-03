@@ -12,6 +12,7 @@ import { useDispatch } from "react-redux";
 import { productsFetch } from "./store/product/productSlice";
 import CategoryPage from "./pages/Category";
 import ScrollToTop from "./ScrollToTop";
+import Collections from "./pages/Collections";
 function App() {
   const dispatch = useDispatch();
 
@@ -34,6 +35,7 @@ function App() {
             <Route path="/logout" element={<Logout />} />
 
             <Route path="/category/:category" element={<CategoryPage />} />
+            <Route path="/collection/:collections" element={<Collections />} />
 
           </Routes>
         </div>

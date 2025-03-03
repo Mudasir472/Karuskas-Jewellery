@@ -21,7 +21,7 @@ export default function ProductCard({ product }) {
                     <h2 className="text-sm md:text-lg font-semibold">{product.name}</h2>
                 </Link>
                 <div className="flex items-center gap-3">
-                    <p className="text-gray-700 font-bold">₹ {product.discountPrice}</p>
+                    <p className="text-gray-700 font-bold">₹ {product.discountPrice || product?.price-100}</p>
                     {product.price && (
                         <p className="text-gray-500 line-through text-sm">₹ {product.price}</p>
                     )}
