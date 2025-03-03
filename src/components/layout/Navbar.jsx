@@ -1,5 +1,5 @@
 import { useState } from "react";
-import logo from "../../assets/images/logo.avif";
+import logo from "../../assets/images/logo12.png";
 import {
     MagnifyingGlassIcon,
     MapPinIcon,
@@ -38,7 +38,7 @@ const Navbar = () => {
                 </div>
 
                 {/* Logo */}
-                <img className="w-[143px]" src={logo} alt="Logo" />
+                <img className="w-[224px] h-[57px]" src={logo} alt="Logo" />
 
                 {/* Right Icons */}
                 <div className="hidden md:flex items-center gap-4">
