@@ -12,6 +12,8 @@ export const productsFetch = createAsyncThunk(
     "products/productsFetch",
     async (_, { rejectWithValue }) => {
         try {
+            console.log(import.meta.env.VITE_BACKEND_URL);
+
             const response = await axios.get(`${import.meta.env.VITE_BACKEND_URL}/api/products/all-products`);
             console.log(response);
 
