@@ -67,6 +67,15 @@ screens) with a gap of 6 units between grid items.
 
  - page **Footer**
  created a responsive Footer 
+
+ 
+## Date: 3-02-2025  
+### Work Done:  
+
+* clone the backend and add data accordingly into the database , and based on that,
+i create different categories and collections
+the data from backend gets stored in the redux store
+Then I filter the data based on different category and different collections and show on the frontend
  
 
 
